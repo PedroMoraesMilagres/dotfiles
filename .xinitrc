@@ -4,6 +4,8 @@ sh ~/.scripts/xsetloop.sh &
 
 ~/.fehbg &
 
+flameshot &
+
 setxkbmap -layout br -variant abnt2
 
 exec dwm
