@@ -1,0 +1,6 @@
+#!/bin/bash
+
+hdd="$(df -h | awk 'NR==8{print $7, $4, $5, $6}')"
+icon="💾"
+printf " %s %s \\n" "$icon" "$hdd"
+
