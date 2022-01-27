@@ -1,6 +1,6 @@
 #!/bin/bash
  
-NETSTATE=$(cat /sys/class/net/enp1s0/operstate)
+NETSTATE=$(cat /sys/class/net/wlp5s0/operstate)
 
 printf("STATE")
 
