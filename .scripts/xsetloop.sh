@@ -3,11 +3,11 @@
 while true; do
   CPU=$(~/.scripts/dwmcpu)
   MEM=$(~/.scripts/dwmmemory)
-	NET=$(~/.scripts/dwmnet)
+  NET=$(cat /sys/class/net/wlp5s0/operstate)
 	TEMP=$(~/.scripts/dwmtemp)
 	HDD=$(~/.scripts/dwmdisk)
 	TIME=$(~/.scripts/dwmclock)
-	xsetroot -name "|$CPU | $TEMP | $MEM | $NET | $HDD | $TIME"
+	xsetroot -name "[ $MEM ] [  : $NET ] [ $HDD ] [ $TIME ]"
 
 	sleep 5s
 	
