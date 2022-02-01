@@ -187,8 +187,8 @@ bar {
         #status_command i3blocks
         status_command ~/.config/i3/bumblebee-status/bumblebee-status \
 		          -m cpu memory nic datetime  \
-         		  -p nic.format nic.exclude=enp0s31f6,lo\
-		          -t night-powerline
+         		  -p nic.format nic.exclude=enp0s31f6,lo datetime.format=%H:%M:%S \
+		          -t dracula-powerline
 
         position top
         font -misc-fixed-medium-r-noral--13-120-75-75-C-70-iso10646-1
